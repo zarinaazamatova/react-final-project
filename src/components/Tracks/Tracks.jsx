@@ -22,8 +22,12 @@ import MoreVertIcon from '@mui/icons-material/MoreVert';
 import { Link } from 'react-router-dom';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
+import Search from '../SearchField/SearchField';
+
+const items = 9; //количество элементов на странице
 
 function Tracks(){
+  const [search, setSearch] =useState("")
     const dispatch = useDispatch()
     const data = useSelector(state=>state)
     console.log(data)
@@ -31,21 +35,30 @@ function Tracks(){
         dispatch(callApi())
     }, [])
 
+    useEffect(()=>{
+          setPageNow(1);
+      },[search])
   
+  
+  const searchedList = data.tracks.filter((item) =>
+  item.track.artists[0].name.toLowerCase().includes(search.toLowerCase())
+  );
 
 
-  
+    console.log(searchedList,'filter')
+    console.log(search,'search')
+    
       /* Pagination */
   const [pageNow,setPageNow] = useState(1)
   const howNamyElements  = 8
   const [howManyPages,setHowManyPages] = useState(2)
   const start = pageNow === 1 ? 1 : pageNow * howNamyElements
   const end = start + howNamyElements
-  const showElements = data.tracks.slice(start,end)
+  const showElements = searchedList.slice(start,end)
 
 
     const nextPage =()=>{
-    if(pageNow < data.tracks.length/howNamyElements){
+    if(pageNow < searchedList.length/howNamyElements){
       setPageNow(pageNow + 1)
     }
   }
@@ -67,6 +80,7 @@ function Tracks(){
             
         <div className="menu">
     
+      <Search setSearch={setSearch}/>
       <div className='favorite'>
         
       </div>
@@ -109,10 +123,10 @@ function Tracks(){
         <Typography variant="body2" color="text.secondary">
           {song.track.name}
         </Typography>
-     
+      
       </CardContent>
       <CardActions disableSpacing>
-      
+        
      
         
       </CardActions>

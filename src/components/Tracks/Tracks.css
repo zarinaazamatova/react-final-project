@@ -1,0 +1,36 @@
+.main-container{
+    /* margin: 100px auto auto 5% ; */
+    display: flex;
+  flex-direction: row;
+  height: 100%;
+    padding-top: 50px;
+}
+.pagination{
+    position: absolute;
+    top: 50px;
+}
+.curr_page{
+   user-select: none;
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+    fill: currentColor;
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    -webkit-transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    font-size: 1.5rem;
+}
+.menu{
+    width: 350px;
+    left: 5px;
+    color: white;
+    margin-top: 100px;
+}
+.cards{
+    
+    width: 85%;
+    margin-top: 100px;
+    margin-right: 25px;
+}

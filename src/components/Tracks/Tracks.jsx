@@ -34,14 +34,57 @@ function Tracks(){
         <>
         <div className='main-container'>
      
+        <Grid  container spacing={5} c>
       {
-      data.map(song=>(
+      data.tracks.map(song=>(
           
           <>
-          <p>{song.title}</p>
-             </>
-      )
-      )}
+             
+  <Grid item xs={3}>
+       <Card sx={{ maxWidth: 345 }} >
+      <CardHeader
+        avatar={
+          <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
+            R
+          </Avatar>
+        }
+        action={
+          <IconButton aria-label="settings">
+            <MoreVertIcon />
+          </IconButton>
+        }
+        title={song.track.artists[0].name}
+      />
+      <CardMedia
+        component="img"
+        height="220"
+        image={song.track.album.images[0].url}
+        alt="Paella dish"
+         />
+      <CardContent>
+        <Typography variant="body2" color="text.secondary">
+          {song.track.name}
+        </Typography>
+      </CardContent>
+      <CardActions disableSpacing>
+    {/*     <IconButton aria-label="add to favorites" >
+          <FavoriteIcon />
+        </IconButton>
+        <IconButton aria-label="share">
+         
+          <ShareIcon />
+        </IconButton> */}
+     
+        
+      </CardActions>
+      </Card>
+    </Grid>
+      
+ </>
+   ))
+      }
+    
+      </Grid>
       </div>
         </>
         

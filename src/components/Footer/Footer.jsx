@@ -14,7 +14,7 @@ class Footer extends React.Component{
             <>
             <div className="footer">
             <p>© 2022  Final React Project </p>||
-                <p>Zarina Azamatova </p>
+                <p>Z.A. </p>
             </div>
             </>
         )

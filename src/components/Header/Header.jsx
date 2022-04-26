@@ -8,6 +8,7 @@ function Header(){
 
     return(
      <div className='header'>
+       
        <PersonOutlineIcon sx={{ fontSize: 40 }} className='user'/>
           <Avatar className="avatar" sx={{ bgcolor: red[600] }} aria-label="music">
             K

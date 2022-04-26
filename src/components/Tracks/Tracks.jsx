@@ -40,7 +40,7 @@ function Tracks({search,setFavorite, favorite,pageNow,setPageNow, addToPlaylist,
           setPageNow(1);
       },[search])
 
-      
+
   /* Search */
   
   const searchedList = data.tracks.filter((item) =>
@@ -79,15 +79,20 @@ function Tracks({search,setFavorite, favorite,pageNow,setPageNow, addToPlaylist,
     return(
         <>
         <div className='main-container'>
-            {/* <Playlist favorite={favorite}/> */}
-      
-          <div className="cards">
-             <div className='pagination'>
+         
+       <div className='pagination'>
       <Link to={`/page/${pageNow - 1}`}><ArrowBackIosNewIcon sx={{ color: red[500] }} onClick={prevPage} baseClassName="fas" className="fa-light fa-circle-chevron-right" /></Link>
       
       <Link className="curr_page" to={`/page/${pageNow}`}>{pageNow}</Link>
       <Link to={`/page/${pageNow + 1}`}><ArrowForwardIosIcon sx={{ color: red[500] }} onClick={nextPage} baseClassName="fas" className="fa-light fa-circle-chevron-right" />
         </Link>
+        
+          
+        </div>
+          <div className="cards">
+   
+        <div>
+            <h1  className='name'>Spotify</h1>
         </div>
         <Grid  container spacing={5} c>
       {

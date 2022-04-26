@@ -14,7 +14,7 @@
     border-radius: 5px;
     color:crimson;
     position: absolute;
-    top: 350px;
+    top: 410px;
     left: 70px;
     font-size:1.1em;
 }
@@ -30,7 +30,7 @@
 }
 .home-icon{
   position: absolute;
-  top: 200px;
+  top: 260px;
   left: 20px;
   color: aliceblue;
 }
@@ -43,18 +43,18 @@
     border-radius: 5px;
     color:crimson;
     position: absolute;
-    top: 210px;
+    top: 260px;
     left: 70px;
     font-size:1.1em;
 }
 .search-icon{
   position: absolute;
-  top: 270px;
+  top: 330px;
   left: 20px;
 }
 .heart-icon{
   position: absolute;
-  top: 340px;
+  top: 400px;
   left: 20px;
   color: aliceblue;
 }

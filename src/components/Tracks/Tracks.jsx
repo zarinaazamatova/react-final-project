@@ -94,13 +94,13 @@ function Tracks({search,setFavorite, favorite,pageNow,setPageNow, addToPlaylist,
         <div>
             <h1  className='name'>Spotify</h1>
         </div>
-        <Grid  container spacing={5} c>
+        <Grid  container spacing={2} c>
       {
       showElements.map(song=>(
           
           <>
              
-  <Grid item xs={3}>
+  <Grid item sx={6} md={3}>
        <Card sx={{ maxWidth: 345 }} >
       <CardHeader
         avatar={

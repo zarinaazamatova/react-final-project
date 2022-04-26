@@ -1,3 +1,60 @@
+
 .App {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
   text-align: center;
+  background-color: black;
+}
+.playlist{
+    margin: 0;
+    padding: 0;
+    background-color: whitesmoke;
+    width: 250px;
+    height: 25px;
+    border-radius: 5px;
+    color:crimson;
+    position: absolute;
+    top: 350px;
+    left: 70px;
+    font-size:1.1em;
+}
+.menu{
+    width: 350px;
+    left: 5px;
+    color: white;
+    margin-top: 200px;
+}
+.cards{
+   margin-right: 20px;
+   padding-top: 30px;
+}
+.home-icon{
+  position: absolute;
+  top: 200px;
+  left: 20px;
+  color: aliceblue;
+}
+.home{
+    margin: 0;
+    padding: 0;
+    background-color: whitesmoke;
+    width: 250px;
+    height: 25px;
+    border-radius: 5px;
+    color:crimson;
+    position: absolute;
+    top: 210px;
+    left: 70px;
+    font-size:1.1em;
+}
+.search-icon{
+  position: absolute;
+  top: 270px;
+  left: 20px;
+}
+.heart-icon{
+  position: absolute;
+  top: 340px;
+  left: 20px;
+  color: aliceblue;
 }

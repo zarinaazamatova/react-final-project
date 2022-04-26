@@ -2,7 +2,7 @@ import {TextField, Grid, FormControl, Box, Input} from '@mui/material'
 import { debounce } from 'lodash'
 import './SeacrhField.css'
 
-function Search({setSearch}){
+function Search({setSearch, search}){
 
 
     
@@ -14,7 +14,7 @@ function Search({setSearch}){
     
     return(
      
-                        <Input type ="text" className='field' placeholder='Search artist...' onChange = {(e)=>handlerWithDebounce(e.target.value)} />
+       <Input type ="text" value={search} className='field' placeholder='Search artist...' onChange = {(e)=>handlerWithDebounce(e.target.value)} />
       
     )
 }

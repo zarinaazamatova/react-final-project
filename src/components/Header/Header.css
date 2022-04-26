@@ -1,0 +1,17 @@
+.header{
+    width: 100%;
+    background-color: black;
+    height: 50px;
+    padding-top: 10px;
+}
+.avatar{
+    margin-left: 10px;
+    margin-top:10px;
+    padding: 5px;
+}
+.user{
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    color: aliceblue;
+}

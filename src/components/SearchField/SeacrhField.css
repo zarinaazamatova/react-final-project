@@ -3,8 +3,9 @@
     padding: 0;
 }
 .field{
-    margin: 0;
-    padding: 0;
+    margin-left: 40px;
+    margin-top: 20px;
+    padding: 10px;
     background-color: whitesmoke;
     width: 250px;
     height: 25px;

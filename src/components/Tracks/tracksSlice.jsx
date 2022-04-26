@@ -13,7 +13,6 @@ export const callApi = createAsyncThunk('api/music',async(obj,{state=defaultStat
     try{
         const req = await fetch('https://spotify23.p.rapidapi.com/playlist_tracks/?id=37i9dQZF1DX4Wsb4d7NKfP&offset=0&limit=100', options)
         const res = await req.json()
-         console.log(res)
         return res.items
        
     }catch(error){

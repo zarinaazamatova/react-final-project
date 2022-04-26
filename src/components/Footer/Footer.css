@@ -1,6 +1,11 @@
 .footer{
-    height: 300px;
+    height: 200px;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 50px;
+    justify-content: center;
+    background-color: black;
 }
 p{
-    color:black;
+    color:white;
 }
